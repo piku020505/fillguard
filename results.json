@@ -1,0 +1,116 @@
+{
+  "config": {
+    "heads": 6,
+    "cycles_per_min": 10.0,
+    "shift_min": 480,
+    "target_g": 347.0,
+    "lsl_g": 343.5,
+    "usl_g": 350.5,
+    "sigma_g": 1.0,
+    "head_bias_sd_g": 0.15,
+    "cycles": 4800
+  },
+  "n_monte_carlo": 200,
+  "false_alarms_per_shift": {
+    "Periodic QC check": 0.775,
+    "FillGuard EWMA": 0.4875,
+    "FillGuard CUSUM": 0.75
+  },
+  "thresholds": {
+    "mean_ewma_L": 4.4,
+    "cusum_h": 13,
+    "var_ewma_L": 0.8
+  },
+  "results": [
+    {
+      "fault": "Partial nozzle clog, head 3 (-2 g step)",
+      "method": "Periodic QC check",
+      "caught_in_shift": 0.99,
+      "median_delay_min": 75.0,
+      "p90_delay_min": 195.0,
+      "median_oos": 56.5,
+      "mean_oos": 61.64,
+      "head_identified": null
+    },
+    {
+      "fault": "Partial nozzle clog, head 3 (-2 g step)",
+      "method": "FillGuard EWMA",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 1.0,
+      "p90_delay_min": 1.5,
+      "median_oos": 1.0,
+      "mean_oos": 0.77,
+      "head_identified": 1.0
+    },
+    {
+      "fault": "Partial nozzle clog, head 3 (-2 g step)",
+      "method": "FillGuard CUSUM",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 2.0,
+      "p90_delay_min": 2.0,
+      "median_oos": 1.0,
+      "mean_oos": 1.23,
+      "head_identified": 0.995
+    },
+    {
+      "fault": "Bulk cooling raises viscosity, all heads (-0.06 g/min drift)",
+      "method": "Periodic QC check",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 20.0,
+      "p90_delay_min": 30.0,
+      "median_oos": 5.0,
+      "mean_oos": 7.225,
+      "head_identified": null
+    },
+    {
+      "fault": "Bulk cooling raises viscosity, all heads (-0.06 g/min drift)",
+      "method": "FillGuard EWMA",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 9.0,
+      "p90_delay_min": 11.049999999999997,
+      "median_oos": 0.0,
+      "mean_oos": 0.435,
+      "head_identified": null
+    },
+    {
+      "fault": "Bulk cooling raises viscosity, all heads (-0.06 g/min drift)",
+      "method": "FillGuard CUSUM",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 10.5,
+      "p90_delay_min": 12.0,
+      "median_oos": 0.0,
+      "mean_oos": 0.595,
+      "head_identified": null
+    },
+    {
+      "fault": "Check-valve wear, head 5 (sigma x 2)",
+      "method": "Periodic QC check",
+      "caught_in_shift": 0.875,
+      "median_delay_min": 115.0,
+      "p90_delay_min": 360.0,
+      "median_oos": 94.0,
+      "mean_oos": 124.07,
+      "head_identified": null
+    },
+    {
+      "fault": "Check-valve wear, head 5 (sigma x 2)",
+      "method": "FillGuard EWMA",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 2.0,
+      "p90_delay_min": 3.5,
+      "median_oos": 1.5,
+      "mean_oos": 1.595,
+      "head_identified": 1.0
+    },
+    {
+      "fault": "Check-valve wear, head 5 (sigma x 2)",
+      "method": "FillGuard CUSUM",
+      "caught_in_shift": 1.0,
+      "median_delay_min": 2.0,
+      "p90_delay_min": 3.5,
+      "median_oos": 1.5,
+      "mean_oos": 1.595,
+      "head_identified": 1.0
+    }
+  ]
+}
